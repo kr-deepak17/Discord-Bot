@@ -12,7 +12,7 @@ const client = new Client({
     ]
 });
 
-// Groq API
+// Groq API integration
 const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY
 });
@@ -29,7 +29,7 @@ client.on("messageCreate", async (message) => {
         });
     }
 
-    // Groq API integration
+    // Groq API integration;
     try {
         await message.channel.sendTyping();
 
